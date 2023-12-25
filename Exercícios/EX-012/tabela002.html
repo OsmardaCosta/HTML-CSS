@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        caption {
+            font-size: 20px;
+            padding: 10px;
+            font-weight: bolder;
+            background-color: rgb(150, 149, 149);
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 600px;
+            position: relative;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            background-color: gray;
+        }
+
+        .num {
+            text-align: right;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <table>
+        <caption>Populacão de Angola</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 60px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Luanda</td>
+                <td class="num">20 000 00</td>
+            </tr>
+            <tr>
+                <td>viana</td>
+                <td class="num">74 745 444</td>
+            </tr>
+            <tr>
+                <td>1ª de Maio</td>
+                <td class="num">37 364</td>
+            </tr>
+            <tr>
+                <td>Mutamba</td>
+                <td class="num">73 534 900</td>
+            </tr>
+            <tr>
+                <td>Ilha De Luanda</td>
+                <td class="num">23 564</td>
+            </tr>
+            <tr>
+                <td>Samizanga</td>
+                <td class="num">23 754 444</td>
+            </tr>
+            <tr>
+                <td>Cazenga</td>
+                <td class="num">64 475</td>
+            </tr>
+            <tr>
+                <td>Baixa</td>
+                <td class="num">53 634</td>
+            </tr>
+            <tr>
+                <td>Lobíto</td>
+                <td class="num">23 464</td>
+            </tr>
+            <tr>
+                <td>Bié</td>
+                <td class="num">24 242 370</td>
+            </tr>
+            <tr>
+                <td>Cabinda</td>
+                <td class="num">62 524 724</td>
+            </tr>
+            <tr>
+                <td>Kwanza sul</td>
+                <td>3635 3634 365</td>
+            </tr>
+            <tr>
+                <td>gabela</td>
+                <td>353 3534 354</td>
+            </tr>
+            <tr>
+                <td>Zaire</td>
+                <td>63 343 353</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td>0000</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
