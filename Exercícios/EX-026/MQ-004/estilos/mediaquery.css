@@ -1,0 +1,55 @@
+@media print {
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main{
+        border: 2px solid black;
+    }
+
+    h1{
+        color: #000;
+    }
+
+    img#phone{display: none;}
+    #tablet{display: none;}
+    #tv{display: none;}
+    #print{display: block;}
+    #pc{display: none;}
+}
+
+@media screen and (min-width: 769px) {
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    img#phone{display: none;}
+    #tablet{display: block;}
+    #tv{display: none;}
+    #print{display: none;}
+    #pc{display: none;}
+}
+
+@media screen and (min-width: 992px) {
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    img#phone{display: none;}
+    #tablet{display: none;}
+    #tv{display: block;}
+    #print{display: none;}
+    #pc{display: none;}
+}
+
+@media screen and (min-width: 1200px) {
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    img#phone{display: none;}
+    #tablet{display: none;}
+    #tv{display: block;}
+    #print{display: none;}
+    #pc{display: none;}
+}
