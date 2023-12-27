@@ -18,7 +18,7 @@
     #pc{display: none;}
 }
 
-@media screen and (min-width: 360px){
+@media screen and (max-width: 728px){
     body{
         background-image: url(../imagens/back-phone.jpg);
     }
