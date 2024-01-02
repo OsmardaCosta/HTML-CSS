@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Estilos/estilo.css" media="all">
-    <link rel="stylesheet" href="Estilos/portrait.css" media="screen and (orientation: portrait)" >
+    <link rel="stylesheet" href="Estilos/portrait.css" media="screen" >
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
    <nav>
@@ -18,10 +19,22 @@
                 <li><a href="#">Promoções</a></li>
             </ul>
         </div>
-        <div class="btn">
+        <span id="burguer" class="material-icons" onclick="clicar()">menu</span>
+
+        <div id="btn">
+           
             <button class="login">Entrar</button>
             <button class="cadastro">Cadastro</button>
         </div>
    </nav>
+   <script>
+    function clicar(){
+        if(btn.style.display == 'block'){
+            btn.style.display = 'none'
+        }else{
+            btn.style.display = 'block'
+        }
+    }
+   </script>
 </body>
 </html>
