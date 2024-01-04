@@ -19,6 +19,7 @@ body{
     background-color: #23232e;
     border-radius: 8px;
     margin: auto;
+    width: 300px;
     color: #ffffff;
     padding: 10px;
 }
@@ -55,14 +56,3 @@ button{
     text-align: center;
 }
 
-@media screen and (max-width: 700px){
-    .form{
-        width: 50%;
-    }
-}
-
-@media screen and (min-width: 700px){
-    .form{
-        width: 300px;
-    }
-}
