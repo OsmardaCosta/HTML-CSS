@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{ 
+    padding: 80px;
+    background-color: #23232e;
+    text-align: center;
+    color: #fff;
+}
+
+main{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.flex1{
+    width: 150px;
+    border: 1px solid black;
+    height: 150px;
+    background-color: #23232e;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.flex1:hover{
+    transform: translate(-6px, -6px);
+    transition-duration: .4s;
+}
+
+.flex2{
+    width: 150px;
+    border: 1px solid black;
+    height: 150px;
+    background-color: #23232e;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.flex2:hover{
+    transform: rotate(360deg);
+    transition-duration: .9s;
+}
+
+.flex3{
+    width: 150px;
+    border: 1px solid black;
+    height: 150px;
+    background-color: #23232e;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.flex3:hover{
+    transform: skew(-5deg, -10deg);
+    transition-duration: .2s;
+}
+
+.flex4{
+    width: 150px;
+    border: 1px solid black;
+    height: 150px;
+    background-color: #23232e;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.flex4:hover{
+    transform: scale(1.20);
+    transition-duration: .4s;
+}
+
+.flex5{
+    width: 150px;
+    border: 1px solid black;
+    height: 150px;
+    background-color: #23232e;
+    border-radius: 5px;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+}
+
+.flex5:hover{
+    transform: matrix(0,1,1,1,1,1);
+    transition-duration: .7s;
+}
+
+section{
+    background-color: #000;
+    margin-top: 10px;
+    background-color: #23232e;
+}
+

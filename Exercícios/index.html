@@ -3,33 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabuada</title>
+    <link rel="stylesheet" href="form.css">
+    <title>Outro</title>
 </head>
 <body>
-    <h1>Gerando tabaudas</h1>
-    <section>
-        <p>Númrero: 
-            <input type="number" name="n" id="nu">
-            <input type="button" value="verificar" onclick="verificar()">
-        </p>
-        <p>
-            <select name="tab" id="ta" size="10">
-                <option>digite um número a cima</option>
-            </select>
-        </p>
-    </section>
-    <script>
-        function verificar() {
-            let numero = document.querySelector('input#nu')
-            let n = Number(numero.value)
-            let tabela = document.querySelector('select#ta')
-            tabela.innerHTML = ''
-            for(c=1; c<=10; c++){
-                let item = document.createElement('option')
-                 item.text = `${n} x ${c} = ${n*c}`
-                 tabela.AppendChild(item)
-            } 
-        }
-    </script>
+    <div class="pai">
+        <div class="form" action="" method="get">
+            <h1>Login</h1>
+            <p>Email</p>
+            <input type="email" name="" id="" placeholder="Digite o email" autocomplete="none">
+            <p>Senha</p>
+            <input type="text" name="" id="" placeholder="Digite a Senha" autocomplete="none">
+            <p class="botao"><button>Entrar</button></p>
+        </div>
+    </div>
 </body>
 </html>

@@ -1,0 +1,40 @@
+@media screen and (max-width: 719px){
+    
+    #burguer{
+       display: block;
+    }
+    #btn{
+       display: none;
+       background-color: #fff;
+       height: 80vh;
+       margin-right: -19px;
+       width: 20vw;
+       margin-top: -20px;
+   }
+   .login, .cadastro{
+    color: black;
+    background-color: #fff;
+    display: block;
+    margin: auto;
+    border-bottom: 1px solid black;
+    border-radius: 0px;
+   }
+
+   .login:hover{
+    background-color: rgb(206, 206, 206);
+   }
+
+   .cadastro:hover{
+    background-color: rgb(206 206 206);
+   }
+}
+
+@media screen and (min-width: 719px){
+   #burguer{
+       display: none;
+   }
+
+   #btn{
+       display: block;
+   }
+}
