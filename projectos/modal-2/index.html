@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+</head>
+<body>
+    <button class="entrar" onclick="abrir()">Entrar</button>
+    <div class="modal-container" id="modal-container">
+        <div class="modal">
+            <h1>Sign-In</h1>
+
+            <div class="form">
+                <div class="osmar">
+                    <div><label for="firstname">First Name:</label></div>
+                    <input type="text" name="firstname" id="firstname" placeholder="Enter User Name">
+                </div>
+
+                <div class="osmar">
+                    <div><label for="lastname">Last Name:</label></div>
+                    <input type="text" name="
+                      lastname" id="lastname" placeholder="Enter last name">
+                </div>
+
+                <div class="osmar">
+                    <div><label for="email">User Email:</label></div>
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email">
+                </div>
+
+                <div class="osmar">
+                    <div><label for="username">New Password:</label></div>
+                    <input type="password" name="password" id="password" placeholder="Enter Your Password">
+                </div>
+            </div>
+            <button id="fechar">Cadastro</button>
+            <p>Já tem uma conta? <a href="">Faça Login</a></p>
+        </div>
+    </div>
+</body>
+
+</html>
