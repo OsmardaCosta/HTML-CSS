@@ -1,5 +1,4 @@
-const abrir = () => {     
-    
+const abrir = () => {  
     setTimeout(() => {
         const modal = document.querySelector('.modal-container')
         modal.classList.add('Abrir')
@@ -10,5 +9,4 @@ const abrir = () => {
         }
         })
     }, 200); 
-
-}   
+} 

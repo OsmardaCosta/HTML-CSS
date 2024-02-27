@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de cadastro</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>LOGO</h1>
+        </div>
+        <ul class="links-header">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Projetos</a></li>
+            <li><a href="#">Notícias</a></li>
+            <li><a href="#">Entreteinimento</a></li>
+        </ul>
+        <div class="menu-button" onclick="Dropdown()">
+            <div class="menu menu1"></div>
+            <div class="menu menu2"></div>
+            <div class="menu menu3"></div>
+        </div>
+    </header>
+    <main>
+        <div class="links">
+            <ul>
+                <li class="um"><a href="#">Home</a></li>
+                <li><a href="#">Projetos</a></li>
+                <li><a href="#">Notícias</a></li>
+                <li><a href="#">Entreteinimento</a></li>
+            </ul>
+        </div>
+        <div class="text-login">
+            <h1>Bem vindo a Página</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis quaerat quia maiores labore dolore,
+                nemo voluptatem animi nobis id assumenda et. Tempora, ipsum aut? Quia voluptatibus labore minima nemo
+                illo?</p>
+            <div><a class="Sign-in-button" onclick="openmodal()">Cadastro</a></div>
+        </div>
+    </main>
+
+    <div id="container-modal">
+        <div id="modal">
+            <h1>Cadastre-se</h1>
+            <div><label for="firstname">First Name:</label></div>
+            <input type="text" id="firstname" placeholder="Enter your firstname">
+            <div><label for="Lastname">Last Name:</label></div>
+            <input type="text" id="Lastname" placeholder="Enter your Lastname">
+            <div><label for="email">Emal:</label></div>
+            <input type="email" name="" id="email" placeholder="Enter your Email">
+            <div><label for="password">password:</label></div>
+            <input type="password" name="" id="password" placeholder="Enter your Password">
+            <div class="Cadastro"><button id="Cadastro">Cadastrar</button></div>
+            <span id="fechar">X</span>
+            <p>Já tem uma conta? <span>Faça Login</span></p>
+        </div>
+    </div>
+</body>
+
+</html>

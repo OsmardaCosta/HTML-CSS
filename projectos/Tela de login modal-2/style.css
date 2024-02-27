@@ -1,0 +1,349 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    overflow: hidden;
+    background-image: url(img/background001.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    color: #F2A500;
+    position: relative;
+}
+
+main h1 {
+    font-size: 60px;
+    text-shadow: 5px 2px 7px rgba(0, 0, 0, 0.514);
+}
+
+.Sign-in-button:hover {
+    background-color: #F2A500;
+    color: #001500;
+    transition: .3s;
+}
+
+main p {
+    color: #ffeeca;
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 0px 0px 40px 0px;
+}
+
+.text-login {
+    width: 800px;
+    margin-top: -100px;
+    margin-left: 110px;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    color: #F2A500;
+}
+
+header h1 {
+    font-family: fantasy;
+    font-weight: 500;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu-button {
+    display: none;
+    cursor: pointer;
+}
+
+.menu1, .menu2, .menu3{
+    transition: .3s;
+}
+
+header .menu {
+    width: 20px;
+    border-radius: 20px;
+    height: 3px;
+    background-color: aliceblue;
+    margin-top: 4px;
+    display: none;
+}
+
+.links {
+    display: none;
+    background-color: #ffffff29;
+    backdrop-filter: blur(3px);
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 200px;
+    animation: dropdown-link .4s;
+}
+
+
+.links ul {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.links ul li {
+    animation: link-animation .6s;
+    margin-bottom: 12px;
+}
+
+.links a {
+    color: #fec343;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.links ul a:hover {
+    opacity: 0.6;
+    transition: .2s;
+}
+
+
+
+header ul a {
+    margin-left: 22px;
+    transition: .2s;
+    color: #FFEECA;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+header ul a:hover {
+    cursor: pointer;
+    padding: 5px;
+    background-color: #ffeeca3e;
+    color: #FFEECA;
+    border-radius: 3px;
+}
+
+.Sign-in-button {
+    padding: 12px 20px;
+    background-color: #23232e00;
+    border: 1px solid #F2A500;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#container-modal {
+    top: 0;
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.393);
+    backdrop-filter: blur(3px);
+    transition: .3s;
+}
+
+#container-modal.open {
+    display: flex;
+}
+
+#modal {
+    padding: 28px;
+    max-width: 700px;
+    background-color: #23232e;
+    border-radius: 9px;
+    color: aqua;
+    position: relative;
+    animation: anima .6s;
+}
+
+#modal input {
+    outline: none;
+    width: 420px;
+    padding: 7px;
+    font-size: 16px;
+    border-radius: 6px;
+    background-color: #2c2c3b;
+    border: none;
+    color: aqua;
+}
+
+#modal h1 {
+    text-align: center;
+}
+
+#modal p {
+    margin-top: 10px;
+    color: #848484;
+    text-align: center;
+}
+
+span {
+    color: aqua;
+    cursor: pointer;
+}
+
+#modal label {
+    font-size: 17px;
+}
+
+#modal div {
+    margin-top: 16px;
+    padding-bottom: 4px;
+}
+
+#modal #Cadastro {
+    display: block;
+    margin: auto;
+    padding: 9px 18px;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: aqua;
+    color: #23232e;
+    border: 1px solid aqua;
+    transition: .3s;
+}
+
+#modal #Cadastro:hover {
+    background-color: #23232e;
+    color: aqua;
+}
+
+#fechar {
+    font-size: 25px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    color: #434346e2;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#fechar:hover {
+    color: aqua;
+}
+
+@keyframes link-animation {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes dropdown-link {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes anima {
+    from {
+        transform: translate3d(-40%, 0, 0);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+
+
+@media screen and (max-width: 665px) {
+
+    .links.drop {
+        display: flex;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    header .menu {
+        display: block;
+    }
+
+    .links-header {
+        display: none;
+    }
+
+    .text-login {
+        margin: auto;
+        padding: 20PX;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+
+    .menu1.active {
+        transform: rotate(-45deg) translate(-2px,8px);
+    }
+
+    .menu2.active{
+        opacity: 0;
+    }
+
+    .menu3.active {
+        transform: rotate(45deg) translate(-2px , -8px);
+    }
+
+    main h1 {
+        font-size: 40px;
+    }
+
+    main p {
+        font-size: 20px;
+    }
+
+    .text-login {
+        width: 500px;
+    }
+}
+
+@media screen and (min-width: 422px) and (max-width: 585px) {
+    .text-login {
+        width: 400px;
+    }
+}
+
+@media screen and (min-width: 665px) {
+    .links {
+        display: none;
+    }
+}
