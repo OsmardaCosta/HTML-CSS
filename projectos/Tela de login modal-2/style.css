@@ -5,19 +5,11 @@
     font-family: sans-serif;
 }
 
-body {
-    overflow: hidden;
+main {
     background-image: url(img/background001.jpg);
     background-size: cover;
     background-position: center center;
-}
-
-main {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    color: #F2A500;
-    position: relative;
+    height: 100vh;
 }
 
 main h1 {
@@ -25,11 +17,7 @@ main h1 {
     text-shadow: 5px 2px 7px rgba(0, 0, 0, 0.514);
 }
 
-.Sign-in-button:hover {
-    background-color: #F2A500;
-    color: #001500;
-    transition: .3s;
-}
+
 
 main p {
     color: #ffeeca;
@@ -39,13 +27,30 @@ main p {
     padding: 0px 0px 40px 0px;
 }
 
-.text-login {
-    width: 800px;
-    margin-top: -100px;
-    margin-left: 110px;
+.box-content {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    width: 80%;
+}
+
+.content h1{
+    color: #F2A500;
+}
+.content p{
+    color: #FFEECA;
 }
 
 header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background-color: transparent;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -68,7 +73,9 @@ header ul {
     cursor: pointer;
 }
 
-.menu1, .menu2, .menu3{
+.menu1,
+.menu2,
+.menu3 {
     transition: .3s;
 }
 
@@ -83,8 +90,9 @@ header .menu {
 
 .links {
     display: none;
-    background-color: #ffffff29;
     backdrop-filter: blur(3px);
+    background-image: linear-gradient(to bottom, #ffeecaa0, 
+    transparent);
     display: none;
     position: absolute;
     top: 0;
@@ -141,11 +149,18 @@ header ul a:hover {
 
 .Sign-in-button {
     padding: 12px 20px;
+    color: #F2A500;
     background-color: #23232e00;
     border: 1px solid #F2A500;
     cursor: pointer;
     font-size: 18px;
     font-weight: bold;
+}
+
+.Sign-in-button:hover {
+    background-color: #F2A500;
+    color: #001500;
+    transition: .3s;
 }
 
 #container-modal {
@@ -155,7 +170,7 @@ header ul a:hover {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.393);
     backdrop-filter: blur(3px);
     transition: .3s;
@@ -303,24 +318,29 @@ span {
         display: none;
     }
 
-    .text-login {
-        margin: auto;
-        padding: 20PX;
+   main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    main .box-content .content h1{
+        text-align: center;
     }
 }
 
 @media screen and (max-width: 1040px) {
 
     .menu1.active {
-        transform: rotate(-45deg) translate(-2px,8px);
+        transform: rotate(-45deg) translate(-2px, 8px);
     }
 
-    .menu2.active{
+    .menu2.active {
         opacity: 0;
     }
 
     .menu3.active {
-        transform: rotate(45deg) translate(-2px , -8px);
+        transform: rotate(45deg) translate(-2px, -8px);
     }
 
     main h1 {
@@ -331,14 +351,15 @@ span {
         font-size: 20px;
     }
 
-    .text-login {
-        width: 500px;
+    .box-content {
+       width: 70%;
+       display: flex;
+       align-items: center;
+       justify-content: center;
     }
-}
 
-@media screen and (min-width: 422px) and (max-width: 585px) {
-    .text-login {
-        width: 400px;
+    .content{
+        width: 80%;
     }
 }
 

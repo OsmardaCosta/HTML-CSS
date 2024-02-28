@@ -18,6 +18,7 @@ function Dropdown() {
     const menu2 = document.querySelector('.menu2')
     const menu3 = document.querySelector('.menu3')
     const links = document.querySelector('.links')
+    
     links.classList.toggle('drop')
     menu1.classList.toggle('active')
     menu2.classList.toggle('active')
